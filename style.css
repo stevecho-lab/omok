@@ -1,1 +1,90 @@
-/* Add styles here */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#game-container {
+    padding: 20px;
+    background-color: #d2b48c; /* Wooden color for the board */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.25);
+}
+
+#board {
+    width: 510px; /* 17 * 30px */
+    height: 510px; /* 17 * 30px */
+    border: 2px solid #8B4513;
+    background-color: #d2b48c;
+    position: relative;
+    background-image:
+        linear-gradient(to right, #8B4513 1px, transparent 1px),
+        linear-gradient(to bottom, #8B4513 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+.cell {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* Make cell transparent so the board lines show */
+    /* background-color: rgba(255, 0, 0, 0.2); */ /* Uncomment for debugging */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.stone {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+#status-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#status {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#new-game {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #8B4513;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#new-game:hover {
+    background-color: #a0522d;
+}
+

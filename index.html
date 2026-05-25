@@ -1,14 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMOK</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <h1>OMOK (17x17)</h1>
+    <div id="game-container">
+        <div id="board"></div>
+    </div>
+    <div id="status-container">
+        <p id="status">Your turn (Black)</p>
+        <button id="new-game">New Game</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
